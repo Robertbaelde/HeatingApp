@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Radiator control
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card *ngFor="let radiator of radiators">
+    <ion-card-header>
+      <ion-card-subtitle>{{radiator?.name}}</ion-card-subtitle>
+      <ion-card-title>{{radiator?.room.current_temperature}} °C</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-range debounce="500" pin="true" color="danger" [(ngModel)]="radiator.valve" (ionChange)="updateRadiator($event, radiator)">
+            <ion-icon small name="ios-speedometer" slot="start"></ion-icon>
+            <ion-badge slot="end">{{radiator.valve}}</ion-badge>
+        </ion-range>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
