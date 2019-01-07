@@ -36,6 +36,15 @@ const routes: Routes = [
         ]
       },
       {
+          path: 'schedule',
+          children: [
+              {
+                  path: '',
+                  loadChildren: '../schedules/schedule-index/schedule-index.module#ScheduleIndexPageModule'
+              }
+          ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

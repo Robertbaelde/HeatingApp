@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SchudleIndexPage } from './schudle-index.page';
+import { ScheduleIndexPage } from './schedule-index.page';
 
-describe('SchudleIndexPage', () => {
-  let component: SchudleIndexPage;
-  let fixture: ComponentFixture<SchudleIndexPage>;
+describe('ScheduleIndexPage', () => {
+  let component: ScheduleIndexPage;
+  let fixture: ComponentFixture<ScheduleIndexPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SchudleIndexPage ],
+      declarations: [ ScheduleIndexPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SchudleIndexPage);
+    fixture = TestBed.createComponent(ScheduleIndexPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

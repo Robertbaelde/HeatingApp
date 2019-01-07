@@ -5,12 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SchudleIndexPage } from './schudle-index.page';
+import { ScheduleIndexPage } from './schedule-index.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: SchudleIndexPage
+    component: ScheduleIndexPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [SchudleIndexPage]
+  declarations: [ScheduleIndexPage]
 })
-export class SchudleIndexPageModule {}
+export class ScheduleIndexPageModule {}
