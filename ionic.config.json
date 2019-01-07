@@ -1,6 +1,8 @@
 {
   "name": "HeatingApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "21b6e80b"
 }

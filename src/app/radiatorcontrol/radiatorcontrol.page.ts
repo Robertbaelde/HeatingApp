@@ -3,11 +3,11 @@ import { ToastController } from '@ionic/angular';
 
 import axios from 'axios';
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: 'app-radiator-control',
+  templateUrl: 'radiatorcontrol.page.html',
+  styleUrls: ['radiatorcontrol.page.scss']
 })
-export class Tab2Page {
+export class RadiatorcontrolPage {
     radiators: any = [];
 
     constructor(public toastController: ToastController) {}
