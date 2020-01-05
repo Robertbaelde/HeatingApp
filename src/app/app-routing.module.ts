@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
-  { path: 'schedule-index', loadChildren: './schedules/schedule-index/schedule-index.module#ScheduleIndexPageModule' }
+  { path: 'schedule/:id', loadChildren: './schedules/schedule/schedule.module#SchedulePageModule' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
